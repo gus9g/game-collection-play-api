@@ -107,3 +107,4 @@ D:\Projetos_treinamento\STUDY\2-PROJETOS_A\CSHARP\DotNet\workspace\GameCollectio
 D:\Projetos_treinamento\STUDY\2-PROJETOS_A\CSHARP\DotNet\workspace\GameCollectionPlayApi\obj\Debug\net8.0\GameCollectionPlayApi.pdb
 D:\Projetos_treinamento\STUDY\2-PROJETOS_A\CSHARP\DotNet\workspace\GameCollectionPlayApi\obj\Debug\net8.0\GameCollectionPlayApi.genruntimeconfig.cache
 D:\Projetos_treinamento\STUDY\2-PROJETOS_A\CSHARP\DotNet\workspace\GameCollectionPlayApi\obj\Debug\net8.0\ref\GameCollectionPlayApi.dll
+D:\Projetos_treinamento\STUDY\2-PROJETOS_A\CSHARP\DotNet\workspace\GameCollectionPlayApi\obj\Debug\net8.0\GameCollectionPlayApi.sourcelink.json

@@ -40,6 +40,23 @@ public class GameController : ControllerBase
                     Id = g.Status.Id,
                     Name = g.Status.Name
                 },
+                CompatibilidadePcGamerAtual = new CompatibilidadePcGamerAtualDto
+                {
+                    Id = g.CompatibilidadePcGamerAtual.Id,
+                    Name = g.CompatibilidadePcGamerAtual.Name
+                },
+                CompatibilidadeNotebookGamerAtual = new CompatibilidadeNotebookGamerAtualDto
+                {
+                    Id = g.CompatibilidadeNotebookGamerAtual.Id,
+                    Name = g.CompatibilidadeNotebookGamerAtual.Name
+                },
+                LancamentoFlag = new LancamentoFlagDto
+                {
+                    Id = g.LancamentoFlag.Id,
+                    Name = g.LancamentoFlag.Name
+                },
+                DataLancamento = g.DataLancamento,
+                DescricaoAdicional = g.DescricaoAdicional,                
                 Platforms = g.GamePlatforms
                     .Select(gp => new PlatformDto
                     {
@@ -80,6 +97,23 @@ public class GameController : ControllerBase
                     Id = g.Status.Id,
                     Name = g.Status.Name
                 },
+                CompatibilidadePcGamerAtual = new CompatibilidadePcGamerAtualDto
+                {
+                    Id = g.CompatibilidadePcGamerAtual.Id,
+                    Name = g.CompatibilidadePcGamerAtual.Name
+                },
+                CompatibilidadeNotebookGamerAtual = new CompatibilidadeNotebookGamerAtualDto
+                {
+                    Id = g.CompatibilidadeNotebookGamerAtual.Id,
+                    Name = g.CompatibilidadeNotebookGamerAtual.Name
+                },
+                LancamentoFlag = new LancamentoFlagDto
+                {
+                    Id = g.LancamentoFlag.Id,
+                    Name = g.LancamentoFlag.Name
+                },
+                DataLancamento = g.DataLancamento,
+                DescricaoAdicional = g.DescricaoAdicional,
                 Platforms = g.GamePlatforms
                     .Select(gp => new PlatformDto
                     {
@@ -117,7 +151,12 @@ public class GameController : ControllerBase
                 Name = dto.Name,
                 Cover = dto.Cover,
                 PersonalRating = dto.PersonalRating,
-                StatusId = dto.StatusId
+                StatusId = dto.StatusId,
+                CompatibilidadeNotebookGamerAtualId = dto.CompatibilidadeNotebookGamerAtualId,
+                CompatibilidadePcGamerAtualId = dto.CompatibilidadePcGamerAtualId,
+                LancamentoFlagId = dto.LancamentoFlagId,
+                DataLancamento = dto.DataLancamento,
+                DescricaoAdicional = dto.DescricaoAdicional,
             };
 
             // Platforms (N:N)
@@ -163,6 +202,11 @@ public class GameController : ControllerBase
         gameCollection.Cover = dto.Cover;
         gameCollection.PersonalRating = dto.PersonalRating;
         gameCollection.StatusId = dto.StatusId;
+        gameCollection.CompatibilidadeNotebookGamerAtualId = dto.CompatibilidadeNotebookGamerAtualId;
+        gameCollection.CompatibilidadePcGamerAtualId = dto.CompatibilidadePcGamerAtualId;
+        gameCollection.LancamentoFlagId = dto.LancamentoFlagId;
+        gameCollection.DataLancamento = dto.DataLancamento;
+        gameCollection.DescricaoAdicional = dto.DescricaoAdicional;
 
         // Atualiza Platforms (N:N)
         gameCollection.GamePlatforms.Clear();

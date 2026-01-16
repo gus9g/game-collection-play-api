@@ -6,6 +6,11 @@ public class GameReadDto
     public string Name { get; set; }
     public string Cover { get; set; }
     public int PersonalRating { get; set; }
+    public CompatibilidadePcGamerAtualDto CompatibilidadePcGamerAtual { get; set; }
+    public CompatibilidadeNotebookGamerAtualDto CompatibilidadeNotebookGamerAtual { get; set; }
+    public LancamentoFlagDto LancamentoFlag { get; set; }
+    public DateTime DataLancamento { get; set; }
+    public string DescricaoAdicional { get; set; }
     public StatusDto Status { get; set; }
     public List<PlatformDto> Platforms { get; set; }
     public List<GenderDto> Genders { get; set; }
