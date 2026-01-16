@@ -17,6 +17,19 @@ public class Game
         set => _personalRating = value < 1 || value > 10 ? 1 : value;
     }
 
+    // 🔗 N:1 → CompatibilidadeNotebookGamerAtual
+    public int CompatibilidadeNotebookGamerAtualId { get; set; }
+    public CompatibilidadeNotebookGamerAtual CompatibilidadeNotebookGamerAtual { get; set; }
+    
+    // 🔗 N:1 → CompatibilidadePcGamerAtual
+    public int CompatibilidadePcGamerAtualId { get; set; }
+    public CompatibilidadePcGamerAtual CompatibilidadePcGamerAtual { get; set; }
+    // 🔗 N:1 → lancamentoFlag
+    public int LancamentoFlagId { get; set; }
+    public LancamentoFlag LancamentoFlag { get; set; }
+    public DateTime DataLancamento { get; set; } = DateTime.UtcNow;
+    public string DescricaoAdicional { get; set; } = string.Empty;
+    
     // 🔗 N:1 → Status
     public int StatusId { get; set; }
     public Status Status { get; set; } = null!;

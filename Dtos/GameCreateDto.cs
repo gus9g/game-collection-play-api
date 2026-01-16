@@ -6,6 +6,11 @@ public class GameCreateDto
     public string Cover { get; set; } = string.Empty;
     public int PersonalRating { get; set; }
 
+    public int CompatibilidadeNotebookGamerAtualId { get; set; }
+    public int CompatibilidadePcGamerAtualId { get; set; }
+    public int LancamentoFlagId { get; set; }
+    public DateTime DataLancamento { get; set; }
+    public string DescricaoAdicional { get; set; } = string.Empty;
     public int StatusId { get; set; }
 
     public List<int> PlatformIds { get; set; } = new();
