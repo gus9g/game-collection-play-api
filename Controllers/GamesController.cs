@@ -154,10 +154,12 @@ public class GameController : ControllerBase
                 StatusId = dto.StatusId,
                 CompatibilidadeNotebookGamerAtualId = dto.CompatibilidadeNotebookGamerAtualId,
                 CompatibilidadePcGamerAtualId = dto.CompatibilidadePcGamerAtualId,
-                LancamentoFlagId = dto.LancamentoFlagId,
+                LancamentoFlagId = 1, // Padrão como "Não lançado"
                 DataLancamento = dto.DataLancamento,
                 DescricaoAdicional = dto.DescricaoAdicional,
             };
+
+            
 
             // Platforms (N:N)
             foreach (var platformId in dto.PlatformIds)
@@ -204,7 +206,7 @@ public class GameController : ControllerBase
         gameCollection.StatusId = dto.StatusId;
         gameCollection.CompatibilidadeNotebookGamerAtualId = dto.CompatibilidadeNotebookGamerAtualId;
         gameCollection.CompatibilidadePcGamerAtualId = dto.CompatibilidadePcGamerAtualId;
-        gameCollection.LancamentoFlagId = dto.LancamentoFlagId;
+        // gameCollection.LancamentoFlagId = dto.LancamentoFlagId;
         gameCollection.DataLancamento = dto.DataLancamento;
         gameCollection.DescricaoAdicional = dto.DescricaoAdicional;
 
