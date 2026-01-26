@@ -11,7 +11,6 @@ public class AppDbContext : DbContext
     }
 
     public DbSet<Game> Game { get; set; }
-    public DbSet<GamePlanning> GamePlanning { get; set; }
     public DbSet<Gender> Gender { get; set; }
     public DbSet<Platform> Platform { get; set; }
     public DbSet<Status> Status { get; set; }
@@ -20,6 +19,8 @@ public class AppDbContext : DbContext
 
     public DbSet<CompatibilidadePcGamerAtual> CompatibilidadePcGamerAtual { get; set; }
     public DbSet<CompatibilidadeNotebookGamerAtual> CompatibilidadeNotebookGamerAtual { get; set; }
+    
+    public DbSet<GamePlanning> GamePlanning { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // GamePlatform N:N
