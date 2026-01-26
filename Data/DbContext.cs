@@ -11,9 +11,11 @@ public class AppDbContext : DbContext
     }
 
     public DbSet<Game> Game { get; set; }
+    public DbSet<GamePlanning> GamePlanning { get; set; }
     public DbSet<Gender> Gender { get; set; }
     public DbSet<Platform> Platform { get; set; }
     public DbSet<Status> Status { get; set; }
+    public DbSet<StatusGamePlanning> StatusGamePlanning { get; set; }
     public DbSet<LancamentoFlag> LancamentoFlag { get; set; }
 
     public DbSet<CompatibilidadePcGamerAtual> CompatibilidadePcGamerAtual { get; set; }
