@@ -19,8 +19,6 @@ public class AppDbContext : DbContext
 
     public DbSet<CompatibilidadePcGamerAtual> CompatibilidadePcGamerAtual { get; set; }
     public DbSet<CompatibilidadeNotebookGamerAtual> CompatibilidadeNotebookGamerAtual { get; set; }
-    
-    public DbSet<GamePlanning> GamePlanning { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // GamePlatform N:N
