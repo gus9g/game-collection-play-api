@@ -13,8 +13,6 @@ dist
 dist-ssr
 coverage
 *.local
-bin/
-obj/
 
 
 # Editor directories and files
@@ -37,18 +35,5 @@ obj/
 
 # Vitest
 __screenshots__/
-bin/Debug/net8.0/GameCollectionPlayApi.dll
-bin/Debug/net8.0/GameCollectionPlayApi.exe
-bin/Debug/net8.0/GameCollectionPlayApi.pdb
-obj/Debug/net8.0/apphost.exe
-obj/Debug/net8.0/GameCollectionPlayApi.AssemblyInfo.cs
-obj/Debug/net8.0/GameCollectionPlayApi.AssemblyInfoInputs.cache
-obj/Debug/net8.0/GameCollectionPlayApi.csproj.CoreCompileInputs.cache
-obj/Debug/net8.0/GameCollectionPlayApi.dll
-obj/Debug/net8.0/GameCollectionPlayApi.sourcelink.json
-obj/Debug/net8.0/GameCollectionPlayApi.pdb
-obj/Debug/net8.0/rjsmcshtml.dswa.cache.json
-obj/Debug/net8.0/rjsmrazor.dswa.cache.json
-obj/Debug/net8.0/rpswa.dswa.cache.json
-obj/Debug/net8.0/ref/GameCollectionPlayApi.dll
-obj/Debug/net8.0/refint/GameCollectionPlayApi.dll
+bin/Debug/
+obj/
